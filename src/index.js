@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux"; // Permite que React acceda al store
 import store from "./redux/store";
-import App from "./App";
+import Counter from "./component/counter";
+import Api from "./component/api";
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Counter />
+    <Api />
   </Provider>,
   document.getElementById("root")
 );
