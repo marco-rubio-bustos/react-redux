@@ -2,7 +2,9 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 // Crear una acción asincrónica
 export const fetchUsers = createAsyncThunk("users/fetchUsers", async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/users");
+  const response = await fetch(
+    "https://yuncitos.cl/adminbasico/api/get_all_customer.php"
+  );
   return response.json();
 });
 

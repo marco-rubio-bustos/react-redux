@@ -21,7 +21,7 @@ const App = () => {
       <h1>Users</h1>
       <ul>
         {users.map((user) => (
-          <li key={user.id}>{user.name}</li>
+          <li key={user.id}>{user.businessName}</li>
         ))}
       </ul>
     </div>
